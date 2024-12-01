@@ -1,0 +1,49 @@
+<div class="container">
+    <h3>Demo on arithmatic opp using 2way binding</h3>
+    <div class="col-md-4">
+      <div>
+        <label>firstNo</label>
+        <input [(ngModel)]="firstNo"  class="form-control">
+      </div>
+      <div>
+        <label>secNo</label>
+        <input [(ngModel)]="secNo"  class="form-control">
+      </div>
+      <div>
+        <label>Result</label>
+        <input [(ngModel)]="result"  class="form-control">
+      </div>
+      <diV class="my-4 text-center">
+        <button (click)="add()" class="btn btn-success mx-3">add</button>
+        <button (click)="sub()" class="btn btn-success mx-3">sub</button>
+        <button (click)="mul()" class="btn btn-success mx-3">mul</button>
+        <button (click)="div()" class="btn btn-success mx-3">div</button>
+      </diV>
+    </div>
+  </div>
+  
+<hr>
+<!--Done by me-->
+<div class="container">
+  <h3>Demo for simple calci</h3>
+  <div class="col-sm-4">
+    <div>
+      <label>one</label>
+      <input class="form-control" placeholder="one" [(ngModel)]="one">
+    </div>
+    <div>
+      <label>Two</label>
+      <input class="form-control" placeholder="two" [(ngModel)]="Two">
+    </div>
+    <div>
+      <label>output</label>
+      <input class="form-control" placeholder="output" [(ngModel)]="output">
+    </div>
+    <div class="my-3 text-center"> 
+      <button (click)="add1()" class="btn btn-success mx-2">ADD</button>
+      <button (click)="sub1()" class="btn btn-success">SUB</button>
+    </div>
+   {{output}}
+  </div>
+
+</div>

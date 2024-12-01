@@ -1,0 +1,9 @@
+<div class="parent" style="background-color: cyan" >
+    <h3>This is parent comp</h3>
+    <h4>data fetched from child:{{someData}}</h4>
+</div>
+
+<div class="placeholder">
+    <app-child (onSendData)="getData($event)"></app-child>
+</div>
+

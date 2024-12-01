@@ -1,0 +1,14 @@
+<div>
+  <h3>Demo on ngFor</h3>
+  <div>
+    <div *ngFor="let person of persons">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">firstName:{{person.firstName}} {{person.lastName}}  </h3>
+          <h4>job:{{person.job}}</h4>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

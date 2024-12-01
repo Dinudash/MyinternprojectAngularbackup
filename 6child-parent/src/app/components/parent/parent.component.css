@@ -1,0 +1,13 @@
+.parent{
+    /* float:left; */
+    display: inline-block;
+    margin-left: 100px;
+    padding:50px ;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(2, 2, 2);
+}
+.placeholder{
+    float:right;
+    margin-right: 100px;
+    
+}

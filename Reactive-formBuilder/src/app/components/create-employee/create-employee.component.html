@@ -1,0 +1,51 @@
+<div>
+    <h3>Create employee form</h3>
+    <div>
+        
+         <div class="col-md-4">
+          <form (ngSubmit)="createEmployee()" [formGroup]="empForm" >
+            <div>
+                <label>
+                Employee Name:
+                </label>
+                <input type="text" class="form-control"  formControlName="ename">
+                <div *ngIf="(empForm.controls['ename'].dirty || empForm.controls['ename'].touched) && empForm.controls['ename'].invalid"
+                     class="alert alert-danger" >
+                        <p *ngIf="empForm.controls['ename'].hasError('required')">* Name field is required</p>
+                        <p *ngIf="empForm.controls['ename'].hasError('minlength')">* Name field should have min length 4 char </p>
+                        <p *ngIf="empForm.controls['ename'].hasError('maxlength')">* Name field should have max length 10 char </p>
+                    </div>
+            </div>
+            <div>
+                <label>
+             job:
+                </label>
+                <input type="text" class="form-control"  formControlName="job">
+            </div>
+            <div>
+                <label>
+              Email
+                </label>
+                <input type="text" class="form-control"  formControlName="email">
+            </div>
+            <div>
+                <label>
+             Salary
+                </label>
+                <input type="text" class="form-control"  formControlName="salary">
+                <div *ngIf="(empForm.controls['salary'].dirty || empForm.controls['salary'].touched) && empForm.controls['salary'].invalid"
+                class="alert alert-danger" >
+                <p *ngIf="empForm.controls['salary'].hasError('required')">* salary field is required</p>
+                <p *ngIf="empForm.controls['salary'].hasError('min')">* salary field should be minimum 20000 </p>
+                <p *ngIf="empForm.controls['salary'].hasError('max')">* salary field should below  200000  </p>
+            </div>
+            </div>
+            <div class="my-4 text-center">
+                <button class="btn btn-primary mx-4"   [disabled]="!empForm.valid" >create </button>
+                <button class="btn btn-primary mx-4" (click)="clearForm()">cancel</button>
+            </div>
+        </form>
+        </div>
+      
+    </div>
+</div>

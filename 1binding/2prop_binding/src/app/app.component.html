@@ -1,0 +1,26 @@
+<div class="border">
+  <h3>Demo on prop binding</h3>
+  <div>
+    <div>
+      <label>firstName</label>
+      <input [ngModel] ="employee.firstName">
+    </div>
+    <div>
+      <label>lastName</label>
+      <input [ngModel]="employee.lastName">
+    </div>
+    <div>
+      <label>Email</label>
+      <input [ngModel]="employee.email">
+    </div>
+    <div>
+      <label>job</label>
+      <input [ngModel]="employee.job">
+    </div>
+  </div>
+</div>
+<hr>
+<div>
+  <p [ngStyle]="{color}">practice on prop binding</p>
+  <p [ngClass]="clsName">practice on prop binding</p>
+</div>

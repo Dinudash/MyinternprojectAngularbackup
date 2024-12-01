@@ -1,0 +1,5 @@
+
+<div>
+<app-carousel-view  *ngIf="formFlag=='carousel'" (onPassDetailEmit)="details($event)"></app-carousel-view>
+<app-users-details *ngIf="formFlag=='users-details'" [users]="saveDatails" ></app-users-details>
+</div>

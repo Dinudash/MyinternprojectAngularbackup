@@ -1,0 +1,46 @@
+*{
+    margin:0px;
+}
+header{
+    background-color: rgba(0, 100, 0, 0.685);
+    height: 70px;
+}
+.box{
+    display: inline-block;
+}
+
+
+/*updated one */
+ul{
+    float : right;
+    display:flex;
+}
+li{
+    list-style: none;
+    padding:20px;
+}
+ul li:hover{
+    background-color: black;
+    mix-blend-mode: darken;
+}
+li a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    display: inline-block;
+    margin-left: 100px;
+    top:20px;
+    color:wheat;
+    position: absolute;
+    cursor: pointer;
+}
+h3:hover{
+    text-shadow: 2px 1px yellow ;
+}
+nav{
+    position: relative ;
+} 

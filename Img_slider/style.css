@@ -1,0 +1,83 @@
+body{ 
+   background-image: linear-gradient( red,black,yellow,lightblue,pink,white);
+   margin:0;
+   padding:0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.slider{
+   box-shadow: 10px 15px black;
+    width:800px;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+     width:500%;
+     height: 500px;
+     display: flex;
+}
+input{
+   display: none;
+}
+.slide {
+   width:20%;
+   transition: 2s;
+} 
+.manual{
+   position: absolute;
+   margin-top: -40px;
+   margin-left: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.manuals{
+   border: 2px solid yellowgreen;
+   padding: 5px;
+   margin: 10px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: 2s;
+}
+.manuals:not(last-child){
+   margin-right: 40px;
+}
+.autos{
+   position: absolute;
+   margin-top: 460px;
+   margin-left: 20%;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
+.autos div{
+   border: 2px solid black;
+   border-radius: 10px;
+   padding:5px;
+   margin:10px;
+   transition: 2s;
+} 
+ .autos div:not(last-child){
+   margin-right: 40px;
+} 
+#radio1:checked ~ .first{
+   margin-left: 0;
+}
+#radio2:checked ~ .first{
+ margin-left: -20%;
+}
+#radio3:checked ~ .first{
+ margin-left: -40%;
+}
+ #radio1:checked ~ .autos .auto1{
+   background-color: aqua;
+}
+#radio2:checked ~ .autos .auto2{
+   background-color: aqua;
+}
+#radio3:checked ~ .autos .auto3{
+   background-color: aqua;
+} 

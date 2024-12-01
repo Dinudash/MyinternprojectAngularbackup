@@ -1,0 +1,10 @@
+button{
+    border:5px solid limegreen;
+    background-color: tomato;
+    text-transform: uppercase;
+    font-weight: bold;
+    background:linear-gradient(red,green,blue)
+}
+button:hover{
+    background-image:linear-gradient(to left,violet,indigo,blue,green,yellow,red);
+}

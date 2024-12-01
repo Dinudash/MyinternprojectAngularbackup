@@ -1,0 +1,35 @@
+<div>
+    <h3>Update employee form</h3>
+    <div>
+        <div class="col-md-4">
+            <div>
+                <label>
+                Employee Name:
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="emp.ename">
+            </div>
+            <div>
+                <label>
+                   job:
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="emp.job">
+            </div>
+            <div>
+                <label>
+                  Email
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="emp.email">
+            </div>
+            <div>
+                <label>
+                  Salary
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="emp.salary">
+            </div>
+            <div class="my-4 text-center">
+                <button class="btn btn-primary mx-4" (click)="updateEmployee()">update </button>
+                <button class="btn btn-primary mx-4" (click)="cancelForm()">cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

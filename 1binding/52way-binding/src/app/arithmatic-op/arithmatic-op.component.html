@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Mini calculator</h2>
+    <div class="col-md-4">
+        <div>
+            <label>FirstNo</label>
+            <input [(ngModel)]="firstNo" class="form-control">
+        </div>
+        <div>
+            <label>SecNo</label>
+            <input [(ngModel)]="secNo" class="form-control">
+        </div>
+        <div>
+            <label>Result</label>
+            <input [(ngModel)]="result" class="form-control">
+        </div>
+        <div class="my-4 text-center">
+        <button (click)="add()" class="btn btn-success mx-3">Add</button>
+        <button (click)="sub()"class="btn btn-success mx-3">Sub</button>
+        <button (click)="mul()"class="btn btn-success mx-3">Mul</button>
+        <button (click)="div()"class="btn btn-success mx-3">Div</button>
+    </div>
+    </div>
+</div>

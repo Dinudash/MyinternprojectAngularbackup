@@ -1,0 +1,32 @@
+<div>
+    <h3>Employee list</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Employee name</th>
+                <th>job</th>
+                <th>Email</th>
+                <th>salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="employeesList.length> 0">
+            <tr *ngFor="let emp of empOperSer.employeesList">
+                <td>{{emp._id}}</td>
+                <td>{{emp.ename}}</td>
+                <td>{{emp.job}}</td>
+                <td>{{emp.email}}</td>
+                <td>{{emp.salary}}</td>
+                <td>
+                    <button class="btn btn-primary"(click)="editEmployee(emp)">Edit</button>
+                    <button class="btn btn-danger" (click)="deleteEmployee(emp._id)">Delete</button>
+                </td>
+               
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

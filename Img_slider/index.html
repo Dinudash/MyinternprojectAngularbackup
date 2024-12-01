@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img slide</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var slide=1;
+        setInterval(function(){
+            document.getElementById('radio'+ slide).checked=true;
+            slide++;
+            if(slide>3){
+                slide=1;
+            }
+        },3000);
+    </script>
+</head>
+<body>
+     <div class="slider">
+         <div class="slides">
+            <input type="radio" id="radio1"name="radio">
+            <input type="radio" id="radio2"name="radio">
+            <input type="radio"id="radio3" name="radio"> 
+            <div class="slide first">
+                <img src="./assets/1img.jpg" width="800px" height="500px">
+            </div>
+            <div class="slide ">
+                <img src="./assets/pic.jpg" width="800px" height="500px">
+            </div>
+            <div class="slide">
+                <img src="./assets/3img.jpg" width="800px" height="500px">
+            </div>
+            <div class="autos">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+            </div>
+         </div>
+         <div class="manual">
+            <label for="radio1" class="manuals"></label>
+            <label  for="radio2" class="manuals"></label>
+            <label  for="radio3"class="manuals"></label>
+         </div>
+     </div>
+</body>
+</html>

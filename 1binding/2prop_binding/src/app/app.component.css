@@ -1,0 +1,9 @@
+.border{
+  text-align: center;
+  border: 3px solid limegreen;
+  padding:50px;
+  margin:20px 30%;
+}
+.c1{
+  background-color: aqua;
+}

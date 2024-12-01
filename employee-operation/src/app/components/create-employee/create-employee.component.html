@@ -1,0 +1,36 @@
+<!--This employee operation has connection with expressJs employee operationv6 -->
+<div>
+    <h3>Create employee form</h3>
+    <div>
+        <div class="col-md-4">
+            <div>
+                <label>
+                Employee Name:
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="ename">
+            </div>
+            <div>
+                <label>
+             Job:
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="job">
+            </div>
+            <div>
+                <label>
+   Email
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="email">
+            </div>
+            <div>
+                <label>
+   Salary
+                </label>
+                <input type="text" class="form-control" [(ngModel)]="salary">
+            </div>
+            <div class="my-4 text-center">
+                <button class="btn btn-primary mx-4" (click)="createEmployee()">create </button>
+                <button class="btn btn-primary mx-4" (click)="clearForm()">cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
